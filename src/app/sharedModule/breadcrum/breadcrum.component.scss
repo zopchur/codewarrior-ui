@@ -1,0 +1,38 @@
+@import "../../../assets/styles/constants.scss";
+
+.mat-toolbar-breadcum {
+  height: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  color: $jetBlack;
+  background-color: lightgray;
+}
+
+.mat-toolbar-home {
+  color: $jetBlack;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+a:hover {
+  color: $lightBlue;
+}
+
+.mat-toolbar-add-tenant {
+  color: $jetBlack;
+  margin-left: 4px;
+}
+
+.card-color-pending {
+  color: orange;
+}
+
+.card-color-approve {
+  color: #006600;
+}
+
+.card-color-reject {
+  color: orangered;
+}
+
+

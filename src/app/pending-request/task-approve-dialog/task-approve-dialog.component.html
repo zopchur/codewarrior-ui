@@ -1,0 +1,88 @@
+<!-- [showToolbar]="false" -->
+<h2 mat-dialog-title>Approve Or Reject Request</h2>
+<mat-dialog-content class="mat-typography">
+  <div class="table-container">
+    <table
+      mat-table
+      [dataSource]="dataSource"
+      class="mat-elevation-z8 demo-table"
+    >
+      <!-- Micro Service Name Column -->
+      <ng-container matColumnDef="label">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          class="table-header"
+        >
+          Label
+        </th>
+        <td mat-cell *matCellDef="let row">
+          <strong>{{ row.label }}</strong>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="value">
+        <th
+          mat-header-cell
+          *matHeaderCellDef
+          mat-sort-header
+          class="table-header"
+        >
+          Value
+          <!-- | date: "medium" -->
+        </th>
+        <td mat-cell *matCellDef="let row">
+          {{ row.value }}
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+  <!-- <mat-form-field appearance="fill">
+    <div>
+      <div class="div-container">
+        <span class="key-heading">
+          <mat-label><strong>Name</strong></mat-label>
+        </span>
+        <span
+          ><mat-label>{{ data.requestedBy }}</mat-label></span
+        >
+      </div>
+      <div class="div-container">
+        <span class="key-heading">
+          <mat-label><strong>Mobile Number</strong></mat-label>
+        </span>
+        <span
+          ><mat-label>{{ data.phoneNo }}</mat-label></span
+        >
+      </div>
+      <div class="div-container">
+        <span class="key-heading">
+          <mat-label><strong>Email ID</strong></mat-label>
+        </span>
+        <span
+          ><mat-label>{{ data.emailId }}</mat-label></span
+        >
+      </div>
+      <div class="div-container">
+        <span class="key-heading">
+          <mat-label><strong>Requested On</strong></mat-label>
+        </span>
+        <span
+          ><mat-label>{{ data.requestedOn }}</mat-label></span
+        >
+      </div>
+    </div>
+  </mat-form-field> -->
+  <!-- <span><strong>Approve Or Reject Request</strong></span> -->
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button [mat-dialog-close]="'cancel'" id="cancel-button">
+    Cancel
+  </button>
+  <button mat-button class="reject-button" (click)="reject()">Reject</button>
+  <button mat-button id="primary-button" (click)="approve()">Approve</button>
+</mat-dialog-actions>

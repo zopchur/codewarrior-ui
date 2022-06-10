@@ -1,0 +1,60 @@
+<div class="logo-wrapper">
+  <img alt="" class="logo" src="../../assets/images/logo.png" />
+</div>
+<div class="menu-wrapper" *ngIf="username">
+  <div class="user-image-wrapper">
+    <img
+      with="20"
+      height="20"
+      class="user-image"
+      src="../../assets/defaultIcon/circle-user-solid.svg"
+    />
+  </div>
+  <div class="user-menu-wrapper" *ngIf="username">
+    <div>
+      <button
+        class="menu-button button-border"
+        id="header-menu-color"
+        mat-button
+        [matMenuTriggerFor]="menu"
+      >
+        Hello,
+        {{ username }}
+      </button>
+    </div>
+    <div>
+      <img
+        [matMenuTriggerFor]="menu"
+        with="15"
+        height="15"
+        class="arrow-image-wrapper"
+        src="../../assets/defaultIcon/angle-down-solid.svg"
+      />
+    </div>
+    <mat-menu #menu="matMenu" class="menu-item">
+      <button mat-menu-item class="button-border logged-as-button-cursor">
+        <span class="logged-as">Logged As </span
+        ><span class="user-name">{{ username }}</span>
+      </button>
+      <button
+        mat-menu-item
+        class="log-out"
+        id="log-out-color"
+        (click)="logout()"
+      >
+        Logout
+        <img
+          id="log-out-img-color"
+          with="15"
+          height="15"
+          class="log-out-img"
+          src="../../assets/defaultIcon/right-from-bracket-solid.svg"
+        />
+      </button>
+    </mat-menu>
+  </div>
+</div>
+
+<div *ngIf="!username">
+  <button mat-button id="primary" (click)="signIn()">Sign In</button>
+</div>

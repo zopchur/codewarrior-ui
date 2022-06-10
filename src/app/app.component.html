@@ -1,0 +1,5 @@
+<div class="loader-container" *ngIf="loaderService.isLoading | async">
+  <mat-spinner style="top: 50%; left: 50%; stroke-width: 5%"></mat-spinner>
+</div>
+<app-header id="header"></app-header>
+<router-outlet></router-outlet>

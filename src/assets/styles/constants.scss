@@ -1,0 +1,120 @@
+// Breakpoints
+$xs: 0;
+$sm: 575px;
+$md: 768px;
+$lg: 992px;
+$xl: 1440px;
+
+// Look at app.component.ts to see the magic
+// We set --customVh to be 1% of the innerHeight of the window
+$customVh: var(--customVh);
+$fullVh: calc(#{$customVh} * 100);
+
+// Dimensions
+$headerHeight: 56px;
+$timelineHeight: 56px;
+
+$smHeaderHeight: var(--header-height);
+$smStepperHeight: var(--stepper-height);
+
+$stepperWidth: 19.5%;
+$stepperHeight: calc(#{$fullVh} - (#{$headerHeight} + #{$timelineHeight}));
+
+$timelineWidth: 100%;
+$toolbarHeigth: 56px;
+
+$audioSentenceBoxHeigth: 64px;
+
+/* Colors */
+/* DO NOT USE ANY OF THOSE */
+$white: white;
+$veryVeryLightGray: rgb(221, 221, 221);
+$defaultLabelInactive: rgb(126, 126, 126);
+$darkGray: rgb(225, 225, 225);
+
+// Breakpoints
+$xs: 0;
+$sm: 575px;
+$md: 768px;
+$lg: 992px;
+$xl: 1440px;
+
+// Look at app.component.ts to see the magic
+// We set --customVh to be 1% of the innerHeight of the window
+$customVh: var(--customVh);
+$fullVh: calc(#{$customVh} * 100);
+
+// Dimensions
+$headerHeight: 56px;
+$timelineHeight: 56px;
+
+$smHeaderHeight: 44px;
+$smStepperHeight: 44px;
+
+$stepperWidth: 19.5%;
+$stepperHeight: calc(#{$fullVh} - (#{$headerHeight} + #{$timelineHeight}));
+
+$captureAreaWithoutTimeline: calc(#{$fullVh} - (#{$smHeaderHeight}));
+
+$timelineWidth: 100%;
+$toolbarHeigth: 56px;
+
+$audioSentenceBoxHeigth: 64px;
+
+// Color
+$primaryColor: var(--primaryColor);
+$secondaryColor: var(--secondaryColor);
+
+$defaultLabelInactive: #7e7e7e;
+$defaultElementBorder: #9d9c9c;
+$azure: #eff0f0;
+$verylightGray: #dbdbdb;
+$defaultElemetBGLight: white;
+$defaultElementFontLight: white;
+$defaultButtonShadow: rgba(0, 0, 0, 0.2);
+
+$headerColor: $primaryColor;
+$videoBackgroundColor: black;
+$white: white;
+$titleColor: rgba(0, 0, 0, 0.87);
+$messageColor: rgba(0, 0, 0, 0.6);
+$menuOptionHoverColor: #efefef;
+$containerBackgroundColor: rgba(180, 180, 180, 0.7);
+$buttonBorder: rgba(237, 237, 237, 0.7);
+$lightBlue: rgb(28, 177, 215);
+$whiteSmoke: #f2f2f2;
+$reviewCloseButtonColor: #7e7e7e;
+$darkGrey: #222222;
+$charcoalGray: #666666;
+$jetBlack: rgb(0, 0, 0);
+$crystalBlue: rgb(28, 177, 215);
+$crystalGray: #f8f8f9;
+$gray: #d9d9da;
+$lightRed: rgba(255, 246, 246, 1);
+$burgundy: rgba(149, 57, 57, 0.4);
+$lightburgundy: rgba(151, 57, 55, 1);
+$burgundyMedium: rgba(177, 106, 105, 1);
+$middleBlack: rgba(34, 34, 34, 1);
+$lightGray: rgba(126, 126, 126, 0.6);
+$mediumGray: #f4f4f4;
+$mediumWhite: #fcfcfc;
+$standardGray: #c8c8c8;
+$shadowBlack: rgba(0, 0, 0, 0.16);
+$disabledTextColor: #b4b4b4;
+$clearGray: #e6e5e5;
+$veryClearGray: #e6e6e6;
+$lightGreen: #f5fff3;
+$darkGreen: #214a2a;
+$midGreen: #599466;
+$darkGray: #e1e1e1;
+$clearGrayTransparent: rgba(244, 244, 244, 0.59);
+$clearBlue: #1cb1d7;
+$darkBackground: rgba(0, 0, 0, 0.75);
+$customBlack: #1c1a1a;
+$customGray: #707070;
+$customBlue: #6184d7;
+$veryVeryLightGray: #dddddd;
+$anotherGray: #9c9c9c;
+$aNewGray: #8a8a8a;
+$errorRed: #b00020;
+$burlywood: burlywood;

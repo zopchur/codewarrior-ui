@@ -1,0 +1,36 @@
+<div>
+  <mat-toolbar color="primary" class="mat-toolbar-breadcum">
+    <span
+      ><a
+        mat-button
+        (click)="breadCrumbHome()"
+        class="mat-toolbar-home"
+        [ngClass]="{
+          'card-color-approve': breadcrumValue === constants.APPROVE_REQUEST,
+          'card-color-reject': breadcrumValue === constants.REJECT_REQUEST,
+          'card-color-pending': breadcrumValue === constants.PENDING_REQUEST
+        }"
+        >Home</a
+      ></span
+    >
+    <mat-icon
+      fxFlex="10"
+      [ngClass]="{
+        'card-color-approve': breadcrumValue === constants.APPROVE_REQUEST,
+        'card-color-reject': breadcrumValue === constants.REJECT_REQUEST,
+        'card-color-pending': breadcrumValue === constants.PENDING_REQUEST
+      }"
+      >play_arrow
+    </mat-icon>
+    <span
+      class="mat-toolbar-add-tenant"
+      [ngClass]="{
+        'card-color-approve': breadcrumValue === constants.APPROVE_REQUEST,
+        'card-color-reject': breadcrumValue === constants.REJECT_REQUEST,
+        'card-color-pending': breadcrumValue === constants.PENDING_REQUEST
+      }"
+    >
+      {{ breadcrumValue }}
+    </span>
+  </mat-toolbar>
+</div>

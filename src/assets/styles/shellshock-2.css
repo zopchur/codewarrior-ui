@@ -1,0 +1,254 @@
+/* add here css with id to change the customer style */
+
+:root {
+
+  /* Color Palete */
+  --textColor: rgb(45, 109, 45);
+  --lighterTextColor: rgb(27, 48, 27);
+  --buttonTextColor: rgb(13, 29, 13);
+
+  --primaryColor: rgb(10, 146, 62);
+  --primaryColorAlt: rgba(2, 150, 46, 0.75);
+  --secondaryColor: rgb(3, 116, 63);
+  --tertiaryColor: rgb(11, 197, 73);
+  --quaternaryColor: rgb(1, 168, 29);
+  --quinaryColor: rgb(255, 255, 255);
+
+  --standardBoxShadowColor: rgba(0, 0, 0, 0.1);
+
+  /* Modal */
+  --modalBackgroundColor: white;
+  --modalButtonCancelBackgroundColor: white;
+  --modalButtonConfirmBackgroundColor: white;
+  --modalTitleColor: rgba(0, 0, 0, 0.87);
+  --modalMessageColor: rgba(0, 0, 0, 0.6);
+  --modalButtonTextColor: var(--primaryColor);
+
+
+
+  /* Basic Colors */
+  --standardTextColor: var(--textColor);
+
+  /* Component Colors */
+  --headerBackgroundColor: var(--quaternaryColor);
+
+  /* Error Component */
+  --errorDescriptionTextColor: rgb(34, 34, 34);
+  --errorMessageTextColor: var(--lighterTextColor);
+  --errorBackgroundColor: rgb(242, 242, 242);
+
+  /* Audio Component */
+  --audioComponentTextColor: var(--textColor);
+  --audioComponentTipTextColor: var(--lighterTextColor);
+  --audioSentenceBoxBackgroundColor: rgb(244, 244, 244);
+
+  /* Button Components */
+  --button1stBackgroundColor: var(--primaryColor);
+  --button1stTextColor: white;
+  --button1stBorderColor: rgba(0,0,0,0);
+  --button1stBoxShadowColor: var(--standardBoxShadowColor);
+
+  --button1stFocusBackgroundColor: var(--primaryColorAlt);
+  --button1stFocusBorderColor: rgba(0,0,0,0);
+  --button1stFocusTextColor: white;
+  --button1stHoverBackgroundColor: var(--primaryColorAlt);
+  --button1stHoverBorderColor: rgba(0,0,0,0);
+  --button1stHoverTextColor: white;
+  --button1stDisableBackgroundColor: var(--secondaryColor);
+  --button1stDisableBorderColor: var(--secondaryColor);
+  --button1stDisableTextColor: white;
+
+  --button2ndBackgroundColor: white;
+  --button2ndBorderColor: var(--primaryColor);
+  --button2ndTextColor: var(--primaryColor);
+  --button2ndBoxShadowColor: var(--standardBoxShadowColor);
+
+  --button2ndFocusBackgroundColor: white;
+  --button2ndFocusBorderColor: var(--primaryColorAlt);
+  --button2ndFocusTextColor: var(--primaryColorAlt);
+  --button2ndHoverBackgroundColor: white;
+  --button2ndHoverBorderColor: var(--primaryColorAlt);
+  --button2ndHoverTextColor: var(--primaryColorAlt);
+  --button2ndDisableBackgroundColor: white;
+  --button2ndDisableBorderColor: var(--secondaryColor);
+  --button2ndDisableTextColor: var(--secondaryColor);
+
+  --button3rdTextColor: var(--primaryColor);
+  --button3rdFocusTextColor: var(--primaryColorAlt);
+  --button3rdHoverTextColor: var(--primaryColorAlt);
+
+  /* Scroll Bar Component */
+  --scrollbarTrackBackgroundColor: white;
+  --scrollbarBorderColor: var(--secondaryColor);
+  --scrollbarThumbBackgroundColor: var(--primaryColor);
+  --scrollbarThumbHoverBackgroundColor: var(--tertiaryColor);
+
+  /* Stepper Component */
+  --stepperBorderColor: var(--secondaryColor);
+  --stepperProgressBarColor: var(--tertiaryColor);
+  --stepperBasicCircleColor: var(--secondaryColor);
+  --stepperVisitedCircleColor: var(--tertiaryColor);
+  --stepperCompletedCircleColor: var(--tertiaryColor);
+  --stepperSelectedCircleColor: var(--primaryColor);
+
+  --stepperSelectedLabelColor: var(--primaryColor);
+  --stepperVisitedLabelColor: var(--tertiaryColor);
+  --stepperUntouchedLabelColor: var(--secondaryColor);
+
+  --stepperElementWrapperBorderColor: var(--secondaryColor);
+
+  --stepperBackgroundColor: var(--quinaryColor);
+
+  /* Choose Button Color */
+  --chooseButtonBackgroundColor: white;
+  --chooseButtonBorderColor: var(--secondaryColor);
+  --chooseButtonTextColor: var(--buttonTextColor);
+
+  --chooseButtonHoverBorderColor: var(--primaryColorAlt);
+  --chooseButtonHoverTextColor: var(--primaryColorAlt);
+
+  --chooseButtonFocusBorderColor: var(--primaryColorAlt);
+  --chooseButtonFocusTextColor: var(--primaryColorAlt);
+
+  --chooseButtonDisableTextColor: var(--secondaryColor);
+  --chooseButtonDisableBackgroundColor: var(--secondaryColor);
+
+  /* Internationalization Component */
+  --internationalizationColor: white;
+  --internationalizationBackgroundColor: var(--quinaryColor);
+  --internationalizationTextColor: var(--buttonTextColor);
+
+  --internationalizationDropdownBackgroundColor: var(--quinaryColor);
+  --internationalizationDropdownBorderColor: rgb(239, 239, 239);
+
+  --internationalizationItemSelectedBackgroundColor:var(--quinaryColor);
+
+  --internationalizationItemCheckedColor: var(--primaryColor);
+  --internationalizationItemBackgroundColor: rgb(239, 239, 239);
+  --internationalizationItemTextColor: rgb(225, 225, 225);
+
+  --internalizationNavLinkColor: var(--quaternaryColor);
+
+  /* Mobile Paginator Component */
+  --mobilePaginatorBasicCircleColor: var(--tertiaryColor);
+  --mobilePaginatorSelectedCircleColor: var(--primaryColor);
+  --mobilePaginatorUntouchedCircleColor: var(--secondaryColor);
+
+  /* Identification Component */
+  --identificationInputBackgroundColor: white;
+
+  --identificationBasicFieldColor: var(--primaryColor);
+  --identificationInvalidFieldColor: red;
+
+  --identificationSelectedPrefixTextColor: var(--primaryColor);
+
+  --identificationRippleEffectColor: var(--primaryColor);
+
+  /* Menu Sizes */
+  --header-height: 44px;
+  --stepper-height: 59px;
+  --stepper-size: 104px;
+
+  /* Dropdown Colors */
+  --dropdown-selected-element: var(--primaryColorAlt);
+  --dropdown-unselected-element: var(--textColor);
+
+  /* Message Modal */
+  --modal-text-title-color: var(--textColor);
+  --modal-text-body-color: var(--textColorAlt);
+}
+
+#app-container{
+  background: transparent radial-gradient(closest-side at 50% 50%, #142B3A 0%, #1C3B4F 52%, #142B3A 100%) 0% 0% no-repeat padding-box;
+}
+
+#home-text {
+  color: #FFFFFF;
+}
+
+#home-background {
+  opacity: 0.15;
+}
+
+#home-button {
+  background: #FFFFFF padding-box;
+  color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
+  border-radius: 4px;
+}
+
+#home-button:disabled {
+  background: #DDDDDD 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 3px #00000033;
+  border-radius: 4px;
+  opacity: 1;
+  color: white;
+  border: none;
+}
+
+#header{
+  background: var(--headerBackgroundColor);
+}
+
+#internationalization {
+  color: white;
+}
+
+/*
+  VERIFICATION SCREEN
+*/
+/*Topbar*/
+
+#timeline-circle {
+  background-color: var(--secondaryColor);
+}
+#timeline-line {
+  background-color: var(--secondaryColor);
+
+}
+#timeline-label {
+  color: var(--secondaryColor);
+}
+
+/*Capture Area*/
+#left-menu-item.active{
+  border-color: var(--secondaryColor);
+}
+
+#left-menu-item-document-check{
+  color: var(--secondaryColor);
+}
+
+#capture-mode-switch.active {
+  background-color: var(--secondaryColor);
+}
+
+/* Buttons  */
+#primary-button {
+  background-color: var(--primaryColorAlt);
+  color: white;
+}
+
+#primary-button:disabled {
+  background: #DDDDDD 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 3px #00000033;
+  border-radius: 4px;
+  opacity: 1;
+  color: white;
+  border: none;
+}
+
+/* tutorial buttons*/
+#action-button {
+  color: #1C1A1A;
+  background-color: transparent;
+}
+
+/* logout button on header menu*/
+#logoutLink {
+  color: var(--secondaryColor) !important;
+}
+
+#logout-icon {
+  color: var(--secondaryColor) !important;
+}

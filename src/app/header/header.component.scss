@@ -1,0 +1,104 @@
+@import "../../assets/styles/constants.scss";
+
+:host {
+  display: flex;
+  flex-direction: row;
+  height: $smHeaderHeight;
+  z-index: 4;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  justify-content: space-between;
+  color: $white;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  font-size: 14px;
+}
+
+// ::ng-deep.cdk-overlay-pane {
+//   position: static !important;
+// }
+.logo {
+  display: flex;
+  margin-bottom: auto;
+  margin-top: auto;
+  height: auto;
+  width: max(min(20vw, 200px), 100px);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo-wrapper {
+  height: 39px;
+}
+.menu-wrapper {
+  display: flex;
+}
+
+.menu-button {
+  color: $white;
+  border: 0px !important;
+  max-width: 125px;
+  cursor: pointer;
+  font-family: auto;
+  font-weight: 600;
+  vertical-align: -webkit-baseline-middle;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.user-image-wrapper {
+  margin-top: 10px;
+}
+.user-image {
+  background-color: $darkGray;
+}
+.mat-menu-content {
+  width: 180px !important;
+}
+.user-menu-wrapper {
+  margin-top: 5px;
+  display: flex;
+}
+.arrow-image-wrapper {
+  background-color: $darkGray;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.log-out {
+  font-weight: 600;
+  font-size: 15px;
+}
+.log-out-img {
+  margin-left: 55px;
+}
+.user-name {
+  font-weight: 600;
+  color: darkgray;
+  margin-left: 2px;
+}
+.logged-as {
+  font-size: 10px;
+  color: gray;
+}
+
+.button-border {
+  border: 1px solid gray;
+  text-transform: capitalize;
+}
+
+.logged-as-button-cursor {
+  cursor: auto;
+}
+
+@media (min-width: $md) {
+  ::ng-deep.cdk-overlay-pane {
+    transform: translate(1px, 2px);
+  }
+}
+
+@media (max-width: $md) {
+  ::ng-deep.cdk-overlay-pane {
+    transform: translate(2px, 2px);
+  }
+}

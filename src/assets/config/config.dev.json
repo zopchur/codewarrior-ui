@@ -1,0 +1,5 @@
+{
+  "KEYCLOAK_URL": "http://localhost:8090/auth/",
+  "KEYCLOAK_REALM": "Nandram",
+  "KEYCLOAK_CLIENT_ID": "webapp"
+}

@@ -1,0 +1,120 @@
+.card-wrapper {
+  display: flex;
+  margin: 8px;
+  position: absolute;
+  flex-wrap: wrap;
+  margin-left: 60px;
+}
+.card {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  margin: 16px;
+  cursor: pointer;
+  margin-bottom: 60px;
+  border: none;
+  padding: 20px;
+  background-color: orange;
+  color: #f4e1d2;
+}
+
+.card-back-color-approve {
+  background-color: #006600;
+}
+
+.card-back-color-reject {
+  background-color: orangered;
+}
+
+.img-max-width {
+  max-width: 217px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+mat-card:hover {
+  background-color: #eeeeee;
+}
+
+.card-text {
+  font-size: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  line-height: 1.334;
+}
+
+.img-hover-eefect {
+  transition: transform 0.3s;
+}
+
+.img-hover-eefect:hover {
+  transform: scale(1.1);
+}
+
+.chat-bot-img {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+img {
+  cursor: pointer;
+}
+
+// authenticate
+// .card {
+//   border: none;
+//   padding: 20px;
+//   background-color: #b2b2b2;
+//   color: #f4e1d2;
+// }
+
+// .contain {
+//   margin: 10rem 0 3rem 0;
+// }
+
+// .form-input {
+//   position: relative;
+//   margin-bottom: 10px;
+//   margin-top: 10px;
+// }
+
+// .form-control {
+//   height: 50px;
+//   background-color: #dfe7f3;
+//   text-indent: 24px;
+//   font-size: 15px;
+// }
+
+// .form-control:focus {
+//   background-color: #25272a;
+//   box-shadow: none;
+//   color: #fff;
+//   border-color: #4f63e7;
+// }
+
+// .signup {
+//   height: 50px;
+//   font-size: 14px;
+// }
+
+// .otp {
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 25em;
+//   padding-top: 20%;
+//   right: 25px;
+// }
+
+// .form-control1 {
+//   height: 50px;
+//   background-color: #dfe7f3;
+//   text-indent: 24px;
+//   font-size: 15px;
+// }
+
+#sign-in-button {
+  visibility: hidden;
+}

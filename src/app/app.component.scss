@@ -1,0 +1,9 @@
+@import "../assets/styles/constants.scss";
+.loader-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $jetBlack;
+  opacity: 0.8;
+  z-index: 10000;
+}

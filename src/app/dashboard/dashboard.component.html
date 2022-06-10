@@ -1,0 +1,23 @@
+<div class="card-wrapper">
+  <div *ngFor="let card of this.cards">
+    <div
+      class="card"
+      [ngClass]="{
+        'card-back-color-approve': card.name === constants.APPROVE_REQUEST,
+        'card-back-color-reject': card.name === constants.REJECT_REQUEST
+      }"
+    >
+      <mat-card (click)="cardClick(card.name)">
+        <img
+          class="img-hover-eefect"
+          mat-card-image
+          src="{{ card.imageUrl }}"
+          alt="card image"
+        />
+        <mat-card-content>
+          <h2 class="card-text">{{ card.name }}</h2>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

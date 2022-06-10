@@ -1,0 +1,43 @@
+@import "../../assets/styles/constants.scss";
+@import "../../assets/styles/mixins.scss";
+
+table {
+  width: 100%;
+}
+
+.table-container {
+  position: relative;
+  min-height: 200px;
+  max-height: 500px;
+  overflow: auto;
+}
+
+.button-reload {
+  margin-left: 8px;
+}
+
+.button-wrapper {
+  display: block;
+  float: right;
+  margin-right: 16px;
+  margin-top: 8px;
+
+  @include for-phone-only {
+    display: grid;
+  }
+}
+
+.table-header {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 95%;
+}
+
+.filter-list {
+  margin-left: 20px;
+  margin-right: 20px;
+}

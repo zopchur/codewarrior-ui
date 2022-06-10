@@ -1,0 +1,122 @@
+/* add here css with id to change the customer style */
+
+:root {
+  --primaryColor: #2b2b61;
+  --secondaryColor: #00b2d7;
+  --secondaryHover: #092a5e;
+  --text-background-color: #2b2b61;
+}
+
+#app-container {
+  background: transparent
+    radial-gradient(
+      closest-side at 50% 50%,
+      #142b3a 0%,
+      #1c3b4f 52%,
+      #142b3a 100%
+    )
+    0% 0% no-repeat padding-box;
+}
+
+#home-background {
+  opacity: 0.15;
+}
+
+#log-out-color {
+  color: var(--secondaryColor);
+}
+
+#log-out-img-color {
+  background-color: var(--secondaryColor);
+}
+
+#home-button {
+  background: white padding-box;
+  color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
+  border-radius: 4px;
+}
+
+#header {
+  background-color: var(--primaryColor);
+}
+
+#header-menu-color {
+  background-color: var(--primaryColor);
+}
+
+/* Buttons  */
+#primary-button {
+  background-color: var(--secondaryColor);
+  border: 2px solid var(--secondaryColor);
+  color: white;
+  cursor: pointer;
+}
+
+#secondary-button {
+  background-color: white;
+  color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.mat-simple-snackbar-action {
+  color: var(--secondaryColor);
+}
+
+.mat-input-element {
+  caret-color: var(--secondaryColor);
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: var(--secondaryColor);
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+  color: var(--secondaryColor);
+}
+
+.mat-label {
+  color: white;
+}
+
+.mat-text-area-form {
+  background-color: var(--text-background-color);
+}
+
+.mat-card {
+  border: 1px solid var(--text-background-color);
+  border-radius: 16px !important;
+}
+
+.select-mat-label {
+  color: var(--text-background-color) !important;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+mat-option {
+  color: var(--text-background-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+mat-select {
+  color: var(--text-background-color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.mat-progress-spinner.mat-progress-spinner-indeterminate-animation[mode="indeterminate"]
+  circle {
+  stroke-width: 7% !important;
+}

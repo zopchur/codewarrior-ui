@@ -1,0 +1,52 @@
+<div class="chat-bot-title">
+  <div><h2 mat-dialog-title>Connect with chatbot</h2></div>
+  <div class="close-button">
+    <button (click)="closeChatModal()" mat-icon-button color="primary">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+</div>
+<mat-dialog-content class="mat-typography">
+  <div class="row" id="chatbot-div">
+    <div class="column column-50">
+      <ng-container *ngFor="let message of messages">
+        <div
+          class="message"
+          [ngClass]="{
+            from: message.author === 'bot',
+            to: message.author === 'user'
+          }"
+        >
+          {{ message.content }}
+        </div>
+      </ng-container>
+      <label *ngIf="messages.length == 0; else dialogInfo" for="nameField"
+        >Chat Bot</label
+      >
+      <ng-template #dialogInfo>
+        <span [className]="'float-right'"
+          >Total messages: {{ messages.length }}</span
+        >
+      </ng-template>
+    </div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <div class="type_msg">
+    <div class="input_msg_write" id="textField">
+      <div>
+        <input
+          matInput
+          class="enter-tenant-name"
+          [(ngModel)]="value"
+          (keyup.enter)="sendMessage()"
+        />
+      </div>
+      <div class="send-button">
+        <button (click)="sendMessage()" mat-icon-button color="primary" [disabled]="!value">
+          <mat-icon>send</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</mat-dialog-actions>
