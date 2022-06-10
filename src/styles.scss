@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/constants.scss";
+@import "./assets/styles/mixins.scss";
+@import "./assets/css/theme.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.mat-typography {
+  background-color: aliceblue;
+}
+
+.background-image {
+  background-image: url("./assets/images/multiTenant.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#home-text {
+  color: $white;
+}
+
+#cancel-button {
+  background-color: $charcoalGray;
+  border: 2px solid $gray;
+  color: $white;
+  cursor: pointer;
+}
+
+#cancel-button {
+  &:hover {
+    background-color: rgb(57, 53, 53);
+  }
+}
+
+.mat-text-area {
+  min-height: 240px;
+  color: $burlywood !important;
+  @include for-phone-only {
+    min-height: 300px;
+  }
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: $customBlue;
+}
+
+.mat-header-cell {
+  background: $crystalGray;
+}
+
+.mat-row:hover {
+  background-color: $buttonBorder;
+}
+
+#primary-button {
+  &:hover {
+    background-color: var(--secondaryHover);
+  }
+}
+
