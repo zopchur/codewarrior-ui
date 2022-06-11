@@ -1,11 +1,12 @@
-FROM node:latest as build
+
+FROM node:10-alpine as build-step
 RUN mkdir -p /app
 WORKDIR /app
 COPY package.json /app
-RUN npm cache clean --force
-RUN npm install --force
+RUN npm install
 COPY . /app
-RUN npm run build
+RUN npm run build --prod
 
+# Stage 2
 FROM nginx:1.17.1-alpine
-COPY --from=build-step /app/docs /usr/share/nginx/html
+COPY --from=build-step /app/dist/id-provider-multi-tenant-ui /usr/share/nginx/html
